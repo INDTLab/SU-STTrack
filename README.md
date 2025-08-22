@@ -8,7 +8,7 @@ SU-STTrack is implemented purely based on the PyTorch.
 ## Install the environment
  Use the Anaconda
 ```
-conda create -n stark python=3.6
+conda create -n susttrack python=3.6
 conda activate susttrack
 bash install_pytorch17.sh
 ```
