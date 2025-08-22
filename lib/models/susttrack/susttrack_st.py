@@ -4,7 +4,7 @@ STARK-ST Model (Spatio-Temporal).
 from .backbone import build_backbone
 from .transformer import build_transformer
 from .head import build_box_head, MLP
-from lib.models.stark.stark_s import STARKS
+from lib.models.susttrack.susttrack_s import STARKS
 
 
 class STARKST(STARKS):
