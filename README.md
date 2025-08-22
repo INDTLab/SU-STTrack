@@ -65,10 +65,10 @@ python tracking/analysis_results.py # need to modify tracker configs and names
 - GOT10K-test
 ```
 python tracking/test.py susttrack_st baseline_got10k_only --dataset got10k_test --threads 32
-python lib/test/utils/transform_got10k.py --tracker_name stark_st --cfg_name baseline_got10k_only
+python lib/test/utils/transform_got10k.py --tracker_name susttrack_st --cfg_name baseline_got10k_only
 ```
 - TrackingNet
 ```
 python tracking/test.py susttrack_st baseline --dataset trackingnet --threads 32
-python lib/test/utils/transform_trackingnet.py --tracker_name stark_st --cfg_name baseline
+python lib/test/utils/transform_trackingnet.py --tracker_name susttrack_st --cfg_name baseline
 ```
