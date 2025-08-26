@@ -8,7 +8,7 @@ import cv2
 import random
 import os
 from lib.utils.merge import merge_template_search
-from lib.models.stark import build_starkst
+from lib.models.susttrack import build_starkst
 from lib.test.tracker.stark_utils import Preprocessor
 from lib.utils.box_ops import clip_box
 import sys
