@@ -9,7 +9,7 @@ def parameters(yaml_name: str):
     prj_dir = env_settings().prj_dir
     save_dir = env_settings().save_dir
     # update default config from yaml file
-    yaml_file = os.path.join(prj_dir, 'experiments/stark_st2/%s.yaml' % yaml_name)
+    yaml_file = os.path.join(prj_dir, 'experiments/susttrack_st2/%s.yaml' % yaml_name)
     update_config_from_file(yaml_file)
     params.cfg = cfg
     print("test config: ", cfg)
@@ -21,7 +21,7 @@ def parameters(yaml_name: str):
     params.search_size = cfg.TEST.SEARCH_SIZE
 
     # Network checkpoint path
-    params.checkpoint = os.path.join(save_dir, "checkpoints/train/stark_st2/%s/STARKST_ep%04d.pth.tar" %
+    params.checkpoint = os.path.join(save_dir, "checkpoints/train/susttrack_st2/%s/STARKST_ep%04d.pth.tar" %
                                     (yaml_name, cfg.TEST.EPOCH))
     #params.checkpoint = os.path.join('/data1/xuelin/xuelin/stark5/checkpoints/train/stark_st1/baseline/STARKST_ep0050.pth.tar')
 
