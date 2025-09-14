@@ -44,9 +44,6 @@ if __name__ == "__main__":
                 "coco_lmdb": "annotations/instances_train2017.json",
                 "vid_lmdb": "cache.json"}
     print("Ready to pre load datasets")
-    start = time.time()
-    ps = []
-    datasets = []
     if 'g' in dataset_str:
         datasets.append("got10k_lmdb")
     if 'l' in dataset_str:
