@@ -19,24 +19,6 @@ def main(argv):
             + '-e <evaltypes>'
         sys.exit(1)
 
-    for opt, arg in opts:
-        if opt == '-h':
-            print 'usage : run_trackers.py -t <trackers> -s <sequences>' \
-                + '-e <evaltypes>'
-            sys.exit(0)
-        elif opt in ("-t", "--tracker"):
-            trackers = [x.strip() for x in arg.split(',')]
-            # trackers = [arg]
-        elif opt in ("-s", "--sequence"):
-            loadSeqs = arg
-            if loadSeqs != 'All' and loadSeqs != 'all' and \
-                loadSeqs != 'tb50' and loadSeqs != 'tb100' and \
-                loadSeqs != 'cvpr13':
-                loadSeqs = [x.strip() for x in arg.split(',')]
-        elif opt in ("-e", "--evaltype"):
-            evalTypes = [x.strip() for x in arg.split(',')]
-            # evalTypes = [arg]
-
     if SETUP_SEQ:
         print 'Setup sequences ...'
         butil.setup_seqs(loadSeqs)
