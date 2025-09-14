@@ -96,14 +96,6 @@ def run_trackers(trackers, seqs, evalType, shiftTypeSet):
                     move_dir = True
                     os.chdir(os.path.join(TRACKER_SRC, t))
                 funcName = 'run_{0}(subS, rp, SAVE_IMAGE)'.format(t)
-                try:
-                    res = eval(funcName)
-                except:
-                    print 'failed to execute {0} : {1}'.format(
-                        t, sys.exc_info())
-                    if move_dir:
-                        os.chdir(WORKDIR)         
-                    break
                 if move_dir:
                     os.chdir(WORKDIR)
 
