@@ -28,10 +28,7 @@ def parse_args():
 
 def get_complexity_MHA(m:nn.MultiheadAttention, x, y):
     """(L, B, D): sequence length, batch size, dimension"""
-    d_mid = m.embed_dim
-    query, key, value = x[0], x[1], x[2]
-    Lq, batch, d_inp = query.size()
-    Lk = key.size(0)
+
     """compute flops"""
     total_ops = 0
     # projection of Q, K, V
